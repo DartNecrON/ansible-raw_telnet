@@ -15,22 +15,7 @@ pip install pexpect
 
 Create playbook in .yml format
 
-hosts: <your inventory file group>
-gather_facts: false
-connection: local
-tasks:
-name: telnet,login and execute command
-ignore_errors: true
-expect:
-command: telnet "{{ inventory_hostname }}"
-responses:
-(?i)username: "admin"
-(?i)password: "12345"
-(?i)#: "{{COMMAND}}\r\nlogout\r\nexit\r\nquit"
-echo: yes
-register: telnet_output
-name: Debug output
-debug: var=telnet_output.stdout_lines
+(See example raw_telnet.yml in repo)
     
 Edit your responces based on eqipment prompt (replace username with login, etc.)
 
