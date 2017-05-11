@@ -1,4 +1,5 @@
 # ansible-raw_telnet
+------------
 Hey! As Michael DeHaan said, "Telnet is a obviously a very insecure protocol, completely insecure in fact, and we strongly want to discourage usage. We would likely refuse the pull request, to be honest — it is just asking for a world of hurt should MITM possibilities arise". Nevertheless, if you just have no other choice, you could use this simple playbook workaround.
 ------------
 
