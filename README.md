@@ -13,7 +13,7 @@ You will need pexpect package, which is accessible via pip. Pip is installed alo
 
 pip install pexpect
 
-# Create playbook in .yml format
+Create playbook in .yml format
 ---
 
 - hosts: <your inventory file group>
